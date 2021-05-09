@@ -5,6 +5,7 @@ import any from "../common/images/AluminumAnything.jpg";
 import LazyImages from "./components/LazyImages";
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from "react-responsive-carousel";
+import LazyLoad from "react-lazyload";
 
 const Gallery = () => {
   return (
@@ -29,13 +30,19 @@ const Gallery = () => {
           showThumbs={false}
         >
           <div className="bg-black h-full flex items-center">
-            <img src={die} alt="..." />
+            <LazyLoad>
+              <img src={die} alt="..." />
+            </LazyLoad>
           </div>
           <div>
-            <img src={any} alt="..." />
+            <LazyLoad>
+              <img src={any} alt="..." />
+            </LazyLoad>
           </div>
           <div>
-            <img src={resurfacing} alt="..." />
+            <LazyLoad>
+              <img src={resurfacing} alt="..." />
+            </LazyLoad>
           </div>
         </Carousel>
       </div>
