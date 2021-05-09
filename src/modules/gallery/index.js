@@ -29,13 +29,13 @@ const Gallery = () => {
           showThumbs={false}
         >
           <div className="bg-black h-full flex items-center">
-            <img src={die} />
+            <img src={die} alt="..." />
           </div>
           <div>
-            <img src={any} />
+            <img src={any} alt="..." />
           </div>
           <div>
-            <img src={resurfacing} />
+            <img src={resurfacing} alt="..." />
           </div>
         </Carousel>
       </div>
