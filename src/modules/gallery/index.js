@@ -22,7 +22,12 @@ const Gallery = () => {
         </div>
       </div>
       <div className="relative md:hidden z-40 max-w-7xl mx-auto px-6 lg:px-8 xl:px-20 2xl:px-8 py-20 2xl:py-32">
-        <Carousel centerMode={true} autoPlay={true} infiniteLoop={true}>
+        <Carousel
+          centerMode={false}
+          autoPlay={true}
+          infiniteLoop={true}
+          showThumbs={false}
+        >
           <div className="bg-black h-full flex items-center">
             <img src={die} />
           </div>
