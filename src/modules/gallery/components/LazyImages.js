@@ -6,7 +6,12 @@ const LazyImages = ({ images }) => {
     <>
       {images.map((image) => (
         <LazyLoad key={image}>
-          <img src={image} alt="..." className="mt-4"></img>
+          <img
+            src={image}
+            alt="..."
+            className="mt-4"
+            style={{ animation: "fadein 1s" }}
+          ></img>
         </LazyLoad>
       ))}
     </>

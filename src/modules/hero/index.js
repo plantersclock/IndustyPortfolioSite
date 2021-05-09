@@ -22,6 +22,7 @@ const Hero = ({ setContactButtonState }) => {
       className="h-full w-full bg-cover"
       style={{
         backgroundImage: ` linear-gradient(to bottom, rgba(10, 15, 33, .5), rgba(10, 15, 33,.5)), url(${heroImage})`,
+        animation: "fadein 1s",
       }}
     >
       <div>
