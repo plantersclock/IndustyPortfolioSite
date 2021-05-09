@@ -1,31 +1,27 @@
 import "./App.css";
+import React, { useState, Suspense } from "react";
 import Hero from "./modules/hero";
-import ProductServices from "./modules/productservices";
-import Guarantee from "./modules/guarantee";
-import Contact from "./modules/contact";
-import AboutUs from "./modules/aboutus/AboutUs";
 import ContactButton from "./modules/contactbutton";
-import { useState } from "react";
-import LazyLoad from "react-lazyload";
+
+const ProductServices = React.lazy(() => import("./modules/productservices"));
+const Guarantee = React.lazy(() => import("./modules/guarantee"));
+const Contact = React.lazy(() => import("./modules/contact"));
+const AboutUs = React.lazy(() => import("./modules/aboutus/AboutUs"));
 
 function App() {
   const [contactButtonState, setContactButtonState] = useState("hidden");
   return (
     <div className="bg-theme-blue-100">
       <Hero setContactButtonState={setContactButtonState} />
-      <LazyLoad offset={50}>
+      <Suspense fallback={<div>Loading...</div>}>
         <ProductServices />
-      </LazyLoad>
-      <LazyLoad offset={50}>
-        <Guarantee />
-      </LazyLoad>
-      <LazyLoad offset={50}>
-        <Contact setContactButtonState={setContactButtonState} />
-      </LazyLoad>
-      <LazyLoad offset={50}>
-        <AboutUs />
-      </LazyLoad>
 
+        <Guarantee />
+
+        <Contact setContactButtonState={setContactButtonState} />
+
+        <AboutUs />
+      </Suspense>
       <ContactButton displayState={contactButtonState} />
     </div>
   );
