@@ -3,6 +3,7 @@ import symbol from "../common/images/LeadingEdgeSymbol.webp";
 import Gallery from "../gallery";
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
+import LazyLoad from "react-lazyload";
 
 const AboutUs = () => {
   const { ref, inView } = useInView();
@@ -53,11 +54,13 @@ const AboutUs = () => {
         <li>To communicate clearly, completely, and quickly</li>
         <p className="mt-8">And we've been woman-owned since 2019!</p>
       </div>
-      <img
-        src={symbol}
-        alt="..."
-        className="absolute z-30  -mt-96 -right-96 2xl:mb-20 2xl:-right-20 opacity-10"
-      />
+      <LazyLoad offset={100}>
+        <img
+          src={symbol}
+          alt="..."
+          className="hidden sm:block absolute z-30 -mt-96 -right-96 2xl:mb-20 2xl:-right-20 opacity-10"
+        />
+      </LazyLoad>
       <Gallery />
     </div>
   );
