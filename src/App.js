@@ -1,23 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import Hero from "./modules/hero";
+import ProductServices from "./modules/productservices";
+import Guarantee from "./modules/guarantee";
+import Contact from "./modules/contact";
+import AboutUs from "./modules/aboutus/AboutUs";
+import ContactButton from "./modules/contactbutton";
+import { useState } from "react";
 
 function App() {
+  const [contactButtonState, setContactButtonState] = useState("hidden");
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="bg-theme-blue-100">
+      <Hero setContactButtonState={setContactButtonState} />
+      <ProductServices />
+      <Guarantee />
+      <Contact setContactButtonState={setContactButtonState} />
+      <AboutUs />
+      <ContactButton displayState={contactButtonState} />
     </div>
   );
 }
