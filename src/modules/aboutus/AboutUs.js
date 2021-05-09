@@ -1,14 +1,43 @@
-import React from "react";
+import React, { useEffect } from "react";
 import symbol from "../common/images/LeadingEdgeSymbol.webp";
 import Gallery from "../gallery";
+import { motion, useAnimation } from "framer-motion";
+import { useInView } from "react-intersection-observer";
 
 const AboutUs = () => {
+  const { ref, inView } = useInView();
+  const controls = useAnimation();
+
+  useEffect(() => {
+    if (!inView) {
+      controls.start("hidden");
+    }
+    if (inView) {
+      controls.start("visible");
+    }
+  }, [inView, controls]);
+
+  const appearVariant = {
+    hidden: { opacity: 0, scale: 0.2 },
+    visible: {
+      opacity: 1,
+      scale: 1,
+      transition: { duration: 1 },
+    },
+  };
+
   return (
     <div className="relative overflow-hidden">
       <div className="relative z-30 max-w-7xl mx-auto px-6 lg:px-8 xl:px-20 2xl:px-8 py-20 2xl:py-32 text-theme-blue-900 md:text-2xl font-light md:leading-9">
-        <h2 className="text-3xl lg:text-4xl mb-12 font-medium ">
+        <motion.h2
+          ref={ref}
+          initial="hidden"
+          animate={controls}
+          variants={appearVariant}
+          className="text-3xl lg:text-4xl mb-12 font-medium "
+        >
           Long ago, in a tool shed far, far away...
-        </h2>
+        </motion.h2>
         <p className="mb-8">
           Leading Edge Tooling started in 1987. Just one guy and a milling
           machine in a basement, saying "yes" when he was offered an
