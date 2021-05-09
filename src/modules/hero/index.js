@@ -20,7 +20,6 @@ const Hero = ({ setContactButtonState }) => {
 
   const width = window.screen.width;
   forceCheck();
-  console.log(width);
 
   return (
     <div className="relative">
