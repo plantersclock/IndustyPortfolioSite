@@ -23,14 +23,11 @@ const Hero = ({ setContactButtonState }) => {
     <div className="relative">
       <div>
         <img
-          src={logo}
+          src={
+            "https://res.cloudinary.com/mpwcloud/image/upload/c_scale,f_auto,q_auto,w_450/v1620583770/IndustryWebsite/LeadingEdgeLogo.png"
+          }
           alt="Leading Edge"
-          className="hidden md:block w-80 relative z-30 xl:w-1/4 3xl:w-1/5 p-4 md:p-8 2xl:p-10 3xl:ml-20"
-        />
-        <img
-          src={logoMobile}
-          alt="Leading Edge"
-          className="md:hidden w-80 relative z-30 xl:w-1/4 3xl:w-1/5 p-4 md:p-8 2xl:p-10 3xl:ml-20"
+          className=" w-80 relative z-30 xl:w-1/4 3xl:w-1/5 p-4 md:p-8 2xl:p-10 3xl:ml-20"
         />
       </div>
 
@@ -69,17 +66,11 @@ const Hero = ({ setContactButtonState }) => {
           </button>
         </div>
       </div>
+
       <div
-        className="absolute z-20 hidden lg:block top-0 h-full w-full bg-cover"
+        className="absolute z-20 top-0 h-full w-full bg-cover"
         style={{
-          backgroundImage: ` linear-gradient(to bottom, rgba(10, 15, 33, .5), rgba(10, 15, 33,.5)), url(${heroImage})`,
-          animation: "fadein 1s",
-        }}
-      ></div>
-      <div
-        className="lg:hidden absolute z-20 top-0 h-full w-full bg-cover"
-        style={{
-          backgroundImage: ` linear-gradient(to bottom, rgba(10, 15, 33, .5), rgba(10, 15, 33,.5)), url(${heroImageMobile})`,
+          backgroundImage: ` linear-gradient(to bottom, rgba(10, 15, 33, .5), rgba(10, 15, 33,.5)), url(https://res.cloudinary.com/mpwcloud/image/upload/c_scale,f_auto,q_auto,w_1440/v1620583770/IndustryWebsite/MetalShavings.png)`,
           animation: "fadein 1s",
         }}
       ></div>

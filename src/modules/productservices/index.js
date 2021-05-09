@@ -13,7 +13,8 @@ const ProductServices = () => {
         title="Product & Services"
       /> */}
       <ProductSection
-        image={die}
+        image="https://res.cloudinary.com/mpwcloud/image/upload/c_scale,f_auto,q_auto,w_1440/v1620583770/IndustryWebsite/AluminumDies.png"
+        offset={0}
         alignment="left"
         title="Aluminum Dies"
         text="text-theme-blue-900"
@@ -21,7 +22,8 @@ const ProductServices = () => {
         desc="We will die for you. No, really. Aluminum dies are our specialty. Large, small, medical, food: we make them all."
       />
       <ProductSection
-        image={resurfacing}
+        image="https://res.cloudinary.com/mpwcloud/image/upload/c_scale,f_auto,q_auto,w_1440/v1620583770/IndustryWebsite/ReSurfacing.png"
+        offset={50}
         alignment="right"
         color="bg-theme-blue-700"
         text="text-theme-blue-100"
@@ -29,7 +31,8 @@ const ProductServices = () => {
         desc="Need a tolerance adjusted? Did a product fail in validation? We can re-surface dies to bring them back into alignment. Contact us."
       />
       <ProductSection
-        image={any}
+        image="https://res.cloudinary.com/mpwcloud/image/upload/c_scale,f_auto,q_auto,w_1440/v1620583770/IndustryWebsite/AluminumAnything.png"
+        offset={50}
         alignment="left"
         title="Aluminum... Anything"
         color="bg-theme-blue-200"

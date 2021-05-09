@@ -11,6 +11,7 @@ const ProductSection = ({
   alignment,
   text,
   extraMargin,
+  offset,
 }) => {
   const controls = useAnimation();
   const { ref, inView } = useInView({ delay: 40 });
@@ -65,7 +66,7 @@ const ProductSection = ({
           </div>
         </div>
       </div>
-      <LazyLoad>
+      <LazyLoad offset={offset}>
         <div
           style={{
             backgroundImage: `url(${image})`,
@@ -76,6 +77,10 @@ const ProductSection = ({
       </LazyLoad>
     </div>
   );
+};
+
+ProductSection.defaultProps = {
+  offset: 0,
 };
 
 export default ProductSection;
