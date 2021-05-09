@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import heroImage from "../common/images/MetalShavings.png";
 import heroImageMobile from "../common/images/MetalShavingsMobile.jpg";
 import logo from "../common/images/LeadingEdgeLogo.webp";
+import logoMobile from "../common/images/LeadingEdgeLogoMobile.png";
 import { useInView } from "react-intersection-observer";
 
 const Hero = ({ setContactButtonState }) => {
@@ -24,7 +25,12 @@ const Hero = ({ setContactButtonState }) => {
         <img
           src={logo}
           alt="Leading Edge"
-          className="w-80 relative z-30 xl:w-1/4 3xl:w-1/5 p-4 md:p-8 2xl:p-10 3xl:ml-20"
+          className="hidden md:block w-80 relative z-30 xl:w-1/4 3xl:w-1/5 p-4 md:p-8 2xl:p-10 3xl:ml-20"
+        />
+        <img
+          src={logoMobile}
+          alt="Leading Edge"
+          className="md:hidden w-80 relative z-30 xl:w-1/4 3xl:w-1/5 p-4 md:p-8 2xl:p-10 3xl:ml-20"
         />
       </div>
 
