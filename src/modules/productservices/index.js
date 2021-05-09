@@ -1,7 +1,5 @@
 import React from "react";
-import die from "../common/images/AluminumDies.jpg";
-import resurfacing from "../common/images/ReSurfacing.jpg";
-import any from "../common/images/AluminumAnything.jpg";
+
 import ProductSection from "./components/ProductSection";
 
 const ProductServices = () => {
@@ -14,7 +12,6 @@ const ProductServices = () => {
       /> */}
       <ProductSection
         image="https://res.cloudinary.com/mpwcloud/image/upload/c_scale,f_auto,q_auto,w_1440/v1620583770/IndustryWebsite/AluminumDies.png"
-        offset={0}
         alignment="left"
         title="Aluminum Dies"
         text="text-theme-blue-900"
