@@ -17,10 +17,10 @@ const SimpleMap = () => {
       scrollWheelZoom={false}
       className="z-40 w-full rounded shadow-sm"
       style={{ paddingTop: "80%" }}
-      dragging={true}
+      dragging={false}
     >
       <TileLayer
-        attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
+        // attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
         // url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
         url="https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png"
       />

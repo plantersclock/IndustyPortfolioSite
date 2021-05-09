@@ -35,7 +35,7 @@ const AboutUs = () => {
           initial="hidden"
           animate={controls}
           variants={appearVariant}
-          className=" text-3xl lg:text-4xl mb-12 font-medium inline-block"
+          className="text-center md:text-left text-3xl lg:text-4xl mb-12 font-medium inline-block"
         >
           Long ago, in a tool shed far, far away...
         </motion.h2>

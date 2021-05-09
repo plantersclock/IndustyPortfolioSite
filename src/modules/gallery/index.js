@@ -1,25 +1,47 @@
 import React from "react";
-import die from "../common/images/AluminumDies.jpg";
-import resurfacing from "../common/images/ReSurfacing.jpg";
-import any from "../common/images/AluminumAnything.jpg";
+
 import LazyImages from "./components/LazyImages";
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from "react-responsive-carousel";
 import LazyLoad from "react-lazyload";
+
+const Kirk = "Kirk.jpg";
+const Lisa = "Lisa.jpg";
+const WorkingLandscape = "WorkingLandscape.jpg";
+const Tam = "Tam.jpg";
+const PrevOwnersLandscape = "PrevOwnersLandscape.jpg";
+const LisaMask = "LisaMask.jpg";
+const PrevOwnerKirkLandscape = "PrevOwnerKirkLandscape.jpg";
+const CoWorker = "Worker.jpg";
+const ProductLandscape = "ProductLandscape.jpg";
+
+const images = [
+  Lisa,
+  Kirk,
+  WorkingLandscape,
+  Tam,
+  PrevOwnersLandscape,
+  LisaMask,
+  PrevOwnerKirkLandscape,
+  CoWorker,
+  ProductLandscape,
+];
 
 const Gallery = () => {
   return (
     <div className="relative ">
       <div className="hidden md:grid md:relative z-40  grid-cols-3 gap-4 max-w-7xl mx-auto px-6 lg:px-8 xl:px-20 2xl:px-8 py-20 2xl:py-32">
         <div className="col-span-1 ">
-          <LazyImages images={[die, resurfacing, any]} />
+          <LazyImages images={[Lisa, WorkingLandscape, CoWorker]} />
         </div>
         <div className="col-span-1">
-          <LazyImages images={[resurfacing, any, die]} />
+          <LazyImages
+            images={[PrevOwnerKirkLandscape, Kirk, ProductLandscape]}
+          />
         </div>
 
         <div className="col-span-1 ">
-          <LazyImages images={[any, die, resurfacing]} />
+          <LazyImages images={[Tam, PrevOwnersLandscape, LisaMask]} />
         </div>
       </div>
       <div className="relative md:hidden z-40 max-w-7xl mx-auto px-6 lg:px-8 xl:px-20 2xl:px-8 py-20 2xl:py-32">
@@ -29,21 +51,16 @@ const Gallery = () => {
           infiniteLoop={true}
           showThumbs={false}
         >
-          <div className="bg-black h-full flex items-center">
-            <LazyLoad>
-              <img src={die} alt="..." />
-            </LazyLoad>
-          </div>
-          <div>
-            <LazyLoad>
-              <img src={any} alt="..." />
-            </LazyLoad>
-          </div>
-          <div>
-            <LazyLoad>
-              <img src={resurfacing} alt="..." />
-            </LazyLoad>
-          </div>
+          {images.map((image) => (
+            <div className="bg-black flex items-center">
+              <LazyLoad>
+                <img
+                  src={`https://res.cloudinary.com/mpwcloud/image/upload/c_pad,f_auto,g_center,q_auto,h_600,w_800/v1620583770/IndustryWebsite/${image}`}
+                  alt="..."
+                />
+              </LazyLoad>
+            </div>
+          ))}
         </Carousel>
       </div>
       <div className="relative z-40 flex w-full text-theme-blue-100 justify-center pb-4 opacity-50 text-center text-sm">

@@ -59,9 +59,9 @@ const ImageCard = ({ image, title, desc, delay }) => {
             </p>
           </div>
         </div>
-        <LazyLoad offset={100}>
+        <LazyLoad offset={200}>
           <div
-            className="absolute z-20 top-0 h-full w-full col-span-1 h-96 lg:hidden bg-cover"
+            className="absolute z-20 top-0 h-full w-full col-span-1 h-96 lg:hidden "
             style={{
               backgroundImage: `url(${image})`,
               animation: "fadein 1s",

@@ -1,8 +1,5 @@
 import React from "react";
 
-import die from "../common/images/AluminumDies.jpg";
-import resurfacing from "../common/images/ReSurfacing.jpg";
-import any from "../common/images/AluminumAnything.jpg";
 import ImageCard from "./components/ImageCard";
 
 const Guarantee = () => {
@@ -18,7 +15,7 @@ const Guarantee = () => {
       >
         <div className="">
           <ImageCard
-            image={die}
+            image="https://res.cloudinary.com/mpwcloud/image/upload/c_scale,f_auto,g_center,q_auto,w_800/v1620583770/IndustryWebsite/Accuracy.jpg"
             delay={1}
             title="Accuracy"
             desc="Do you have special requirements? Do you need assistance refining
@@ -29,7 +26,7 @@ const Guarantee = () => {
         <div className="">
           <ImageCard
             delay={1.5}
-            image={resurfacing}
+            image="https://res.cloudinary.com/mpwcloud/image/upload/c_scale,f_auto,g_center,q_auto,w_800/v1620583770/IndustryWebsite/Speed.jpg"
             title="Speed"
             desc="We can turn your project around quickly, often within 48 hours.
             If you're in panic-mode, contact us. We have shipped dies in 1 day:
@@ -39,7 +36,7 @@ const Guarantee = () => {
         <div className="">
           <ImageCard
             delay={2}
-            image={any}
+            image="https://res.cloudinary.com/mpwcloud/image/upload/c_scale,f_auto,g_center,q_auto,w_800/v1620583770/IndustryWebsite/Size.jpg"
             title="Scale"
             desc={`We make all size dies. We've made them as small as 2" x 3" and up to 36" x 70". Front and back tooling, in a variety of thicknesses and configurations.`}
           />
