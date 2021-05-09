@@ -83,7 +83,7 @@ const Hero = ({ setContactButtonState }) => {
             backgroundImage: ` linear-gradient(to bottom, rgba(10, 15, 33, .5), rgba(10, 15, 33,.5)), url(https://res.cloudinary.com/mpwcloud/image/upload/c_scale,f_auto,q_auto,w_${Math.round(
               width * 1.5
             )}/v1620583770/IndustryWebsite/MetalShavings.jpg)`,
-            // animation: "fadein .5s",
+            animation: "fadein .2s",
           }}
         ></div>
       </LazyLoad>
