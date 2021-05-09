@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import { useInView } from "react-intersection-observer";
 import { useAnimation, motion } from "framer-motion";
+import LazyLoad from "react-lazyload";
 
 const ImageCard = ({ image, title, desc, delay }) => {
   const controls = useAnimation();
@@ -58,14 +59,17 @@ const ImageCard = ({ image, title, desc, delay }) => {
             </p>
           </div>
         </div>
-        <div
-          className="absolute z-10 top-0 h-full w-full col-span-1 h-96 lg:hidden bg-cover"
-          style={{
-            backgroundImage: `url(${image})`,
+        <LazyLoad>
+          <div
+            className="absolute z-10 top-0 h-full w-full col-span-1 h-96 lg:hidden bg-cover"
+            style={{
+              backgroundImage: `url(${image})`,
+              animation: "fadein 1s",
 
-            // clipPath: "polygon(0 25%, 50% 0, 100% 25%, 100% 100%, 0 100%)",
-          }}
-        ></div>
+              // clipPath: "polygon(0 25%, 50% 0, 100% 25%, 100% 100%, 0 100%)",
+            }}
+          ></div>
+        </LazyLoad>
       </div>
     </>
   );

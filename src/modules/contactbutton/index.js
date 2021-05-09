@@ -23,7 +23,7 @@ const ContactButton = ({ displayState }) => {
       initial="hidden"
       animate={controls}
       variants={appearVariant}
-      className="fixed z-60 right-6 bottom-6 md:right-20 md:bottom-20"
+      className="fixed z-60 right-6 bottom-6 xl:right-20 xl:bottom-20"
     >
       <button
         onClick={() => {

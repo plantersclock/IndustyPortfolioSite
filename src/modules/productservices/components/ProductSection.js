@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
+import LazyLoad from "react-lazyload";
 
 const ProductSection = ({
   image,
@@ -32,13 +33,8 @@ const ProductSection = ({
     visible: { opacity: 1, x: 0, transition: { duration: 0.5, delay: 0.2 } },
   };
   return (
-    <div
-      style={{
-        backgroundImage: `url(${image})`,
-      }}
-      className="h-full w-full bg-cover"
-    >
-      <div className={(color && color) + " bg-opacity-80 w-full"}>
+    <div className="relative z-40 h-full w-full">
+      <div className={(color && color) + " relative z-40 bg-opacity-80 w-full"}>
         <div
           className={
             "flex max-w-7xl mx-auto px-6 lg:px-8 xl:px-20 2xl:px-8 py-20 2xl:py-24 3xl:py-32 " +
@@ -69,6 +65,15 @@ const ProductSection = ({
           </div>
         </div>
       </div>
+      <LazyLoad offset={300}>
+        <div
+          style={{
+            backgroundImage: `url(${image})`,
+            animation: "fadein .5s",
+          }}
+          className="absolute z-10 top-0 h-full w-full bg-cover"
+        ></div>
+      </LazyLoad>
     </div>
   );
 };
