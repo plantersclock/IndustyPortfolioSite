@@ -6,16 +6,26 @@ import Contact from "./modules/contact";
 import AboutUs from "./modules/aboutus/AboutUs";
 import ContactButton from "./modules/contactbutton";
 import { useState } from "react";
+import LazyLoad from "react-lazyload";
 
 function App() {
   const [contactButtonState, setContactButtonState] = useState("hidden");
   return (
     <div className="bg-theme-blue-100">
       <Hero setContactButtonState={setContactButtonState} />
-      <ProductServices />
-      <Guarantee />
-      <Contact setContactButtonState={setContactButtonState} />
-      <AboutUs />
+      <LazyLoad offset={50}>
+        <ProductServices />
+      </LazyLoad>
+      <LazyLoad offset={50}>
+        <Guarantee />
+      </LazyLoad>
+      <LazyLoad offset={50}>
+        <Contact setContactButtonState={setContactButtonState} />
+      </LazyLoad>
+      <LazyLoad offset={50}>
+        <AboutUs />
+      </LazyLoad>
+
       <ContactButton displayState={contactButtonState} />
     </div>
   );
