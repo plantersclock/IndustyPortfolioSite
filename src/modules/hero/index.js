@@ -29,7 +29,7 @@ const Hero = ({ setContactButtonState }) => {
         <img
           src={logo}
           alt="Leading Edge"
-          className="w-80  xl:w-1/4 3xl:w-1/5 p-4 md:p-8 2xl:p-10 3xl:ml-72"
+          className="w-80  xl:w-1/4 3xl:w-1/5 p-4 md:p-8 2xl:p-10 3xl:ml-20"
         />
       </div>
 
@@ -37,8 +37,7 @@ const Hero = ({ setContactButtonState }) => {
         <div className=" sm:w-4/5 mt-4 sm:mt-4 2xl:mt-12 2xl:w-full">
           <h1 className="sm:font-light text-theme-blue-100 text-3xl xs:text-4xl md:text-6xl 2xl:text-8xl ">
             Aluminum
-          </h1>
-          <h1 className="sm:font-light text-theme-blue-100 text-3xl xs:text-4xl md:text-6xl 2xl:text-8xl ">
+            <br />
             Machining Experts
           </h1>
           <p className="font-light text-theme-blue-100 mt-4 sm:mt-6 md:text-xl 2xl:w-2/5">
