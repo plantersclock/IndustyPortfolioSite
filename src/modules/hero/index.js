@@ -17,13 +17,14 @@ const Hero = ({ setContactButtonState }) => {
   const anchor = document.querySelector("#contact-form-id");
 
   const width = window.screen.width;
+  console.log(width);
 
   return (
     <div className="relative">
       <div>
         <img
           src={`https://res.cloudinary.com/mpwcloud/image/upload/c_scale,f_auto,q_auto,w_${
-            width > 900 ? Math.round(width / 2) : "450"
+            width < 450 ? 450 : 900
           }/v1620583770/IndustryWebsite/LeadingEdgeLogo.png`}
           alt="Leading Edge"
           className=" w-80 relative z-30 xl:w-1/4 3xl:w-1/5 p-4 md:p-8 2xl:p-10 3xl:ml-20"
