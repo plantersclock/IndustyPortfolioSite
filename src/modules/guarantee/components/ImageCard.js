@@ -29,7 +29,7 @@ const ImageCard = ({ image, title, desc, delay }) => {
         initial="hidden"
         animate={controls}
         variants={downVariant}
-        className="relative hidden lg:block col-span-1 bg-cover"
+        className="relative z-30 hidden lg:block col-span-1 bg-cover"
         style={{
           backgroundImage: `url(${image})`,
           paddingTop: "150%",

@@ -33,8 +33,8 @@ const ProductSection = ({
     visible: { opacity: 1, x: 0, transition: { duration: 0.5, delay: 0.2 } },
   };
   return (
-    <div className="relative z-40 h-full w-full">
-      <div className={(color && color) + " relative z-40 bg-opacity-80 w-full"}>
+    <div className="relative z-20 h-full w-full">
+      <div className={(color && color) + " relative z-20 bg-opacity-80 w-full"}>
         <div
           className={
             "flex max-w-7xl mx-auto px-6 lg:px-8 xl:px-20 2xl:px-8 py-20 2xl:py-24 3xl:py-32 " +
