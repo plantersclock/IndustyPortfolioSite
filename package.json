@@ -24,7 +24,8 @@
     "build": "craco build",
     "test": "craco test",
     "eject": "react-scripts eject",
-    "postbuild": "react-snap"
+    "postbuild": "react-snap",
+    "build:snap": "craco build && react-snap"
   },
   "reactSnap": {
     "source": "build",
