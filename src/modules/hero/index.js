@@ -26,7 +26,7 @@ const Hero = ({ setContactButtonState }) => {
       <div>
         <img
           src={`https://res.cloudinary.com/mpwcloud/image/upload/c_scale,f_auto,q_auto,w_${
-            width < 450 ? 450 : 900
+            width < 450 ? width : 900
           }/v1620583770/IndustryWebsite/LeadingEdgeLogo.png`}
           alt="Leading Edge"
           className=" h-24 xs:h-28 relative z-40 md:h-36 lg:h-44 3xl:h-52 p-4 md:p-8 2xl:p-10 3xl:ml-20"
