@@ -65,7 +65,7 @@ const ProductSection = ({
           </div>
         </div>
       </div>
-      <LazyLoad offset={300}>
+      <LazyLoad>
         <div
           style={{
             backgroundImage: `url(${image})`,
