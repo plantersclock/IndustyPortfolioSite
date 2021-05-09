@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import heroImage from "../common/images/MetalShavings.png";
-import logo from "../common/images/LeadingEdgeLogo.png";
+import logo from "../common/images/LeadingEdgeLogo.webp";
 import { useInView } from "react-intersection-observer";
 
 const Hero = ({ setContactButtonState }) => {

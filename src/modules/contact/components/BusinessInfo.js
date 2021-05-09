@@ -1,5 +1,6 @@
 import React from "react";
 import SimpleMap from "./SimpleMap";
+import LazyLoad from "react-lazyload";
 
 const BusinessInfo = () => {
   return (
@@ -13,7 +14,9 @@ const BusinessInfo = () => {
         </p>
 
         <div className="block sm:hidden lg:block w-full lg:w-4/5 mr-4 lg:mr-12 mt-12">
-          <SimpleMap />
+          <LazyLoad>
+            <SimpleMap />
+          </LazyLoad>
         </div>
 
         <h2 className="text-2xl lg:text-4xl mt-12">Hours</h2>

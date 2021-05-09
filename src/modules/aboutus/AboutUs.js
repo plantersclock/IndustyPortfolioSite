@@ -1,5 +1,5 @@
 import React from "react";
-import symbol from "../common/images/LeadingEdgeSymbol.png";
+import symbol from "../common/images/LeadingEdgeSymbol.webp";
 import Gallery from "../gallery";
 
 const AboutUs = () => {
