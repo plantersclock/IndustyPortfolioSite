@@ -52,7 +52,7 @@ const Gallery = () => {
           showThumbs={false}
         >
           {images.map((image) => (
-            <div className="bg-black flex items-center">
+            <div key="image" className="bg-black flex items-center">
               <LazyLoad>
                 <img
                   src={`https://res.cloudinary.com/mpwcloud/image/upload/c_pad,f_auto,g_center,q_auto,h_600,w_800/v1620583770/IndustryWebsite/${image}`}
