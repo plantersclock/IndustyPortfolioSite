@@ -49,12 +49,12 @@ const AboutUs = () => {
         <p className="mb-8">
           Our goals are the same as they were 32 years ago:
         </p>
-        <ul>
+        <ul className="list-disc ml-4 md:ml-6">
           <li>To help you solve your problems</li>
           <li>To get you what you need, as soon as you need it</li>
           <li>To communicate clearly, completely, and quickly</li>
-          <p className="mt-8">And we've been woman-owned since 2019!</p>
         </ul>
+        <p className="mt-8">And we've been woman-owned since 2019!</p>
       </div>
       <LazyLoad offset={100}>
         <img
