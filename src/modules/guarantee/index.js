@@ -16,7 +16,7 @@ const Guarantee = () => {
         <div className="">
           <ImageCard
             image="https://res.cloudinary.com/mpwcloud/image/upload/c_scale,f_auto,g_center,q_auto,w_800/v1620583770/IndustryWebsite/Accuracy.jpg"
-            delay={1}
+            delay={0.5}
             title="Accuracy"
             desc="Do you have special requirements? Do you need assistance refining
               your designs? We meet your needs so that you can fill your
@@ -25,7 +25,7 @@ const Guarantee = () => {
         </div>
         <div className="">
           <ImageCard
-            delay={1.5}
+            delay={1}
             image="https://res.cloudinary.com/mpwcloud/image/upload/c_scale,f_auto,g_center,q_auto,w_800/v1620583770/IndustryWebsite/Speed.jpg"
             title="Speed"
             desc="We can turn your project around quickly, often within 48 hours.
@@ -35,7 +35,7 @@ const Guarantee = () => {
         </div>
         <div className="">
           <ImageCard
-            delay={2}
+            delay={1.5}
             image="https://res.cloudinary.com/mpwcloud/image/upload/c_scale,f_auto,g_center,q_auto,w_800/v1620583770/IndustryWebsite/Size.jpg"
             title="Scale"
             desc={`We make all size dies. We've made them as small as 2" x 3" and up to 36" x 70". Front and back tooling, in a variety of thicknesses and configurations.`}

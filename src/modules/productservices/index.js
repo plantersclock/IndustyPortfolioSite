@@ -12,6 +12,7 @@ const ProductServices = () => {
       /> */}
       <ProductSection
         image="https://res.cloudinary.com/mpwcloud/image/upload/c_scale,f_auto,q_auto,w_1440/v1620583770/IndustryWebsite/AluminumDies.png"
+        offset={400}
         alignment="left"
         title="Aluminum Dies"
         text="text-theme-blue-900"
@@ -20,7 +21,7 @@ const ProductServices = () => {
       />
       <ProductSection
         image="https://res.cloudinary.com/mpwcloud/image/upload/c_scale,f_auto,q_auto,w_1440/v1620583770/IndustryWebsite/ReSurfacing.png"
-        offset={100}
+        offset={400}
         alignment="right"
         color="bg-theme-blue-700"
         text="text-theme-blue-100"
@@ -29,7 +30,7 @@ const ProductServices = () => {
       />
       <ProductSection
         image="https://res.cloudinary.com/mpwcloud/image/upload/c_scale,f_auto,q_auto,w_1440/v1620583770/IndustryWebsite/AluminumAnything.png"
-        offset={100}
+        offset={800}
         alignment="left"
         title="Aluminum... Anything"
         color="bg-theme-blue-200"
