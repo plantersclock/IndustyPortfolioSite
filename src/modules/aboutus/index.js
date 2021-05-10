@@ -56,7 +56,7 @@ const AboutUs = () => {
         </ul>
         <p className="mt-8">And we've been woman-owned since 2019!</p>
       </div>
-      <LazyLoad offset={300}>
+      <LazyLoad offset={500}>
         <img
           src={symbol}
           alt="..."
