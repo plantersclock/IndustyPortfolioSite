@@ -23,7 +23,7 @@ const Hero = ({ setContactButtonState }) => {
   forceCheck();
 
   return (
-    <div className={`relative overflow-hidden`}>
+    <div className={`relative overflow-hidden w-full`}>
       <div>
         <img
           src={`https://res.cloudinary.com/mpwcloud/image/upload/c_scale,f_auto,q_auto,w_${
@@ -72,7 +72,7 @@ const Hero = ({ setContactButtonState }) => {
       <div
         className="absolute z-20 top-0 h-full w-full bg-cover bg-theme-blue-900"
         style={{
-          backgroundImage: `url(https://res.cloudinary.com/mpwcloud/image/upload/c_scale,f_auto,q_auto,w_100/v1620583770/IndustryWebsite/MetalShavings.png`,
+          backgroundImage: `url(https://res.cloudinary.com/mpwcloud/image/upload/c_scale,f_auto,q_auto,w_100/v1620583770/IndustryWebsite/MetalShavings.jpg`,
           // animation: "fadein 1s",
         }}
       ></div>
