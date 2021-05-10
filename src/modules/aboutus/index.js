@@ -10,9 +10,9 @@ const AboutUs = () => {
   const controls = useAnimation();
 
   useEffect(() => {
-    if (!inView) {
-      controls.start("hidden");
-    }
+    // if (!inView) {
+    //   controls.start("hidden");
+    // }
     if (inView) {
       controls.start("visible");
     }
@@ -56,7 +56,7 @@ const AboutUs = () => {
         </ul>
         <p className="mt-8">And we've been woman-owned since 2019!</p>
       </div>
-      <LazyLoad offset={100}>
+      <LazyLoad offset={300}>
         <img
           src={symbol}
           alt="..."
