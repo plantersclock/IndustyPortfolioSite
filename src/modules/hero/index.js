@@ -29,7 +29,7 @@ const Hero = ({ setContactButtonState }) => {
           src={`https://res.cloudinary.com/mpwcloud/image/upload/c_scale,f_auto,q_auto,w_${
             width < 450 ? width : 900
           }/v1620583770/IndustryWebsite/LeadingEdgeLogo.png`}
-          alt="Leading Edge"
+          alt="Industry Site"
           className=" h-24 xs:h-28 relative z-40 md:h-36 2xl:h-44 3xl:h-52 p-4 md:p-8 2xl:p-10 3xl:ml-20"
         />
       </div>
@@ -42,7 +42,7 @@ const Hero = ({ setContactButtonState }) => {
             Machining Experts
           </h1>
           <p className="font-light text-theme-blue-100 mt-4 sm:mt-6 md:text-xl 2xl:w-2/5">
-            Leading Edge Tooling Specializes in the Design, Manufacture and
+            Industry Site Specializes in the Design, Manufacture and
             Re-Surfacing of Custom Aluminum Dies and Products.
           </p>
         </div>

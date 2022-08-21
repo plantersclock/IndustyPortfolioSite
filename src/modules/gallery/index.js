@@ -64,7 +64,7 @@ const Gallery = () => {
         </Carousel>
       </div>
       <div className="relative z-40 flex w-full text-theme-blue-100 justify-center pb-4 opacity-50 text-center text-sm">
-        Copyright © 2021 Leading Edge Tooling - All Rights Reserved.
+        Copyright © 2021 Industry Site - All Rights Reserved.
       </div>
       <div className="relative z-40 flex w-full text-theme-blue-100 justify-center pb-4 xl:pb-12 opacity-50 text-center text-sm">
         Created By: Matthew Wright

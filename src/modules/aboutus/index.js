@@ -40,7 +40,7 @@ const AboutUs = () => {
           Long ago, in a tool shed far, far away...
         </motion.h2>
         <p className="mb-8">
-          Leading Edge Tooling started in 1987. Just one guy and a milling
+          Industry Site Tooling started in 1987. Just one guy and a milling
           machine in a basement, saying "yes" when he was offered an
           opportunity. From that low-key beginning, we've grown up and out. But
           we never lost our drive to say "yes" whenever opportunity comes our
